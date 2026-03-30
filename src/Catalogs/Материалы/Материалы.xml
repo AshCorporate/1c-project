@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <Catalog>
+    <Properties>
+      <Name>Материалы</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Материалы</core:content></core:item>
+      </Synonym>
+      <Hierarchical>false</Hierarchical>
+    </Properties>
+    <ChildObjects>
+      <Attribute>
+        <Properties>
+          <Name>ЕдиницаИзмерения</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Единица измерения</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:string</core:Type><core:StringQualifiers><core:Length>20</core:Length></core:StringQualifiers></Type>
+        </Properties>
+      </Attribute>
+      <Attribute>
+        <Properties>
+          <Name>Артикул</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Артикул</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:string</core:Type><core:StringQualifiers><core:Length>50</core:Length></core:StringQualifiers></Type>
+        </Properties>
+      </Attribute>
+    </ChildObjects>
+  </Catalog>
+</MetaDataObject>

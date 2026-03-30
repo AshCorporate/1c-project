@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <InformationRegister>
+    <Properties>
+      <Name>ЦеныУслуг</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Цены услуг</core:content></core:item>
+      </Synonym>
+      <InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+      <WriteMode>Independent</WriteMode>
+    </Properties>
+    <ChildObjects>
+      <Dimension>
+        <Properties>
+          <Name>Услуга</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Услуга</core:content></core:item></Synonym>
+          <Type><core:Type>CatalogRef.Услуги</core:Type></Type>
+        </Properties>
+      </Dimension>
+      <Resource>
+        <Properties>
+          <Name>Цена</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Цена</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:decimal</core:Type><core:NumberQualifiers><core:Digits>15</core:Digits><core:FractionDigits>2</core:FractionDigits></core:NumberQualifiers></Type>
+        </Properties>
+      </Resource>
+    </ChildObjects>
+  </InformationRegister>
+</MetaDataObject>

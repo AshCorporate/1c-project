@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data/enterprise/current-data-composition-schema"
+                       xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <DataSets>
+    <DataSet xsi:type="DataSetQuery" name="НаборДанныхВыручка"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Query>
+        ВЫБРАТЬ
+            ВыручкаОбороты.Услуга           КАК Услуга,
+            ВыручкаОбороты.Клиент           КАК Клиент,
+            ВыручкаОбороты.Сотрудник        КАК Сотрудник,
+            ВыручкаОбороты.СуммаОборот      КАК Сумма,
+            ВыручкаОбороты.КоличествоОборот КАК Количество
+        ИЗ
+            РегистрНакопления.Выручка.Обороты(
+                &НачалоПериода,
+                &КонецПериода,
+                ,
+            ) КАК ВыручкаОбороты
+      </Query>
+      <Fields>
+        <Field>
+          <Field>Услуга</Field>
+          <Title>Услуга</Title>
+        </Field>
+        <Field>
+          <Field>Клиент</Field>
+          <Title>Клиент</Title>
+        </Field>
+        <Field>
+          <Field>Сотрудник</Field>
+          <Title>Сотрудник</Title>
+        </Field>
+        <Field>
+          <Field>Сумма</Field>
+          <Title>Сумма</Title>
+        </Field>
+        <Field>
+          <Field>Количество</Field>
+          <Title>Количество</Title>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Parameters>
+    <Parameter name="НачалоПериода">
+      <Title>Начало периода</Title>
+      <ValueType>
+        <core:Type>xsd:dateTime</core:Type>
+      </ValueType>
+    </Parameter>
+    <Parameter name="КонецПериода">
+      <Title>Конец периода</Title>
+      <ValueType>
+        <core:Type>xsd:dateTime</core:Type>
+      </ValueType>
+    </Parameter>
+  </Parameters>
+  <DataCompositionSchema>
+    <Settings>
+      <Selection>
+        <Item>
+          <Field>Услуга</Field>
+        </Item>
+        <Item>
+          <Field>Клиент</Field>
+        </Item>
+        <Item>
+          <Field>Сотрудник</Field>
+        </Item>
+        <Item>
+          <Field>Сумма</Field>
+        </Item>
+        <Item>
+          <Field>Количество</Field>
+        </Item>
+      </Selection>
+      <Structure>
+        <Group name="ГруппировкаУслуга">
+          <GroupFields>
+            <GroupField>
+              <Field>Услуга</Field>
+            </GroupField>
+          </GroupFields>
+          <Selection>
+            <Item><Field>Услуга</Field></Item>
+            <Item><Field>Сумма</Field></Item>
+            <Item><Field>Количество</Field></Item>
+          </Selection>
+          <Structure>
+            <Group name="ГруппировкаКлиент">
+              <GroupFields>
+                <GroupField>
+                  <Field>Клиент</Field>
+                </GroupField>
+              </GroupFields>
+              <Selection>
+                <Item><Field>Клиент</Field></Item>
+                <Item><Field>Сумма</Field></Item>
+                <Item><Field>Количество</Field></Item>
+              </Selection>
+              <Structure>
+                <Group name="ГруппировкаСотрудник">
+                  <GroupFields>
+                    <GroupField>
+                      <Field>Сотрудник</Field>
+                    </GroupField>
+                  </GroupFields>
+                  <Selection>
+                    <Item><Field>Сотрудник</Field></Item>
+                    <Item><Field>Сумма</Field></Item>
+                    <Item><Field>Количество</Field></Item>
+                  </Selection>
+                </Group>
+              </Structure>
+            </Group>
+          </Structure>
+        </Group>
+      </Structure>
+      <Order>
+        <OrderItem>
+          <Field>Сумма</Field>
+          <OrderType>Descending</OrderType>
+        </OrderItem>
+      </Order>
+    </Settings>
+  </DataCompositionSchema>
+</DataCompositionSchema>

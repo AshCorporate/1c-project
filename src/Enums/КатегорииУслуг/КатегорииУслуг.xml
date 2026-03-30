@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <Enum>
+    <Properties>
+      <Name>КатегорииУслуг</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Категории услуг</core:content></core:item>
+      </Synonym>
+    </Properties>
+    <ChildObjects>
+      <EnumValue>
+        <Name>Мойка</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Мойка</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Полировка</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Полировка</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Защита</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Защита</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Химчистка</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Химчистка</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Оклейка</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Оклейка</core:content></core:item></Synonym>
+      </EnumValue>
+    </ChildObjects>
+  </Enum>
+</MetaDataObject>

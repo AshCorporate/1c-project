@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Configuration>
+    <Properties>
+      <Name>УчётВДетейлингЦентре</Name>
+      <Synonym>
+        <core:item>
+          <core:lang>ru</core:lang>
+          <core:content>Учёт в детейлинг-центре</core:content>
+        </core:item>
+      </Synonym>
+      <Comment>Конфигурация для учёта услуг в детейлинг-центре</Comment>
+      <DefaultLanguage>Language.Русский</DefaultLanguage>
+      <ScriptVariant>Russian</ScriptVariant>
+      <DefaultRunMode>ManagedApplication</DefaultRunMode>
+      <Version>1.0.0</Version>
+      <Vendor>Junior 1C Developer</Vendor>
+    </Properties>
+    <ChildObjects>
+      <Language>Language.Русский</Language>
+      <Catalog>Catalog.Клиенты</Catalog>
+      <Catalog>Catalog.Услуги</Catalog>
+      <Catalog>Catalog.Материалы</Catalog>
+      <Catalog>Catalog.Сотрудники</Catalog>
+      <Enum>Enum.КатегорииУслуг</Enum>
+      <Enum>Enum.СтатусыЗаписей</Enum>
+      <Document>Document.ЗаписьНаУслугу</Document>
+      <Document>Document.ОказаниеУслуги</Document>
+      <Document>Document.ПоступлениеМатериалов</Document>
+      <AccumulationRegister>AccumulationRegister.Выручка</AccumulationRegister>
+      <AccumulationRegister>AccumulationRegister.ОстаткиМатериалов</AccumulationRegister>
+      <InformationRegister>InformationRegister.ЦеныУслуг</InformationRegister>
+      <Report>Report.ВыручкаЗаПериод</Report>
+      <Report>Report.ОстаткиМатериалов</Report>
+      <CommonModule>CommonModule.ОбщийМодульСервер</CommonModule>
+      <CommonModule>CommonModule.ОбщийМодульКлиентСервер</CommonModule>
+    </ChildObjects>
+  </Configuration>
+</MetaDataObject>

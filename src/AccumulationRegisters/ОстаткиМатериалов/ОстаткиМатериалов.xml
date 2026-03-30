@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <AccumulationRegister>
+    <Properties>
+      <Name>ОстаткиМатериалов</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Остатки материалов</core:content></core:item>
+      </Synonym>
+      <RegisterType>Balance</RegisterType>
+    </Properties>
+    <ChildObjects>
+      <Dimension>
+        <Properties>
+          <Name>Материал</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Материал</core:content></core:item></Synonym>
+          <Type><core:Type>CatalogRef.Материалы</core:Type></Type>
+        </Properties>
+      </Dimension>
+      <Resource>
+        <Properties>
+          <Name>Количество</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Количество</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:decimal</core:Type><core:NumberQualifiers><core:Digits>10</core:Digits><core:FractionDigits>3</core:FractionDigits></core:NumberQualifiers></Type>
+        </Properties>
+      </Resource>
+    </ChildObjects>
+  </AccumulationRegister>
+</MetaDataObject>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <Catalog>
+    <Properties>
+      <Name>Услуги</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Услуги</core:content></core:item>
+      </Synonym>
+      <Hierarchical>false</Hierarchical>
+    </Properties>
+    <ChildObjects>
+      <Attribute>
+        <Properties>
+          <Name>Категория</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Категория</core:content></core:item></Synonym>
+          <Type><core:Type>EnumRef.КатегорииУслуг</core:Type></Type>
+        </Properties>
+      </Attribute>
+      <Attribute>
+        <Properties>
+          <Name>ВремяВыполненияМинут</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Время выполнения (мин)</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:decimal</core:Type><core:NumberQualifiers><core:Digits>5</core:Digits><core:FractionDigits>0</core:FractionDigits></core:NumberQualifiers></Type>
+        </Properties>
+      </Attribute>
+      <Attribute>
+        <Properties>
+          <Name>Описание</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Описание</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:string</core:Type><core:StringQualifiers><core:Length>500</core:Length></core:StringQualifiers></Type>
+        </Properties>
+      </Attribute>
+      <PredefinedDataSource>
+        <PredefinedItem>
+          <Name>МойкаКузова</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Мойка кузова</core:content></core:item></Synonym>
+        </PredefinedItem>
+        <PredefinedItem>
+          <Name>Полировка</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Полировка</core:content></core:item></Synonym>
+        </PredefinedItem>
+        <PredefinedItem>
+          <Name>ХимчисткаСалона</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Химчистка салона</core:content></core:item></Synonym>
+        </PredefinedItem>
+        <PredefinedItem>
+          <Name>НанесениеКерамики</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Нанесение керамики</core:content></core:item></Synonym>
+        </PredefinedItem>
+        <PredefinedItem>
+          <Name>ОклейкаПлёнкой</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Оклейка плёнкой</core:content></core:item></Synonym>
+        </PredefinedItem>
+      </PredefinedDataSource>
+    </ChildObjects>
+  </Catalog>
+</MetaDataObject>
