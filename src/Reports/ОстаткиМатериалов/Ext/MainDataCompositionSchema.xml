@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data/enterprise/current-data-composition-schema"
+                       xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <DataSets>
+    <DataSet xsi:type="DataSetQuery" name="НаборДанныхОстатки"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Query>
+        ВЫБРАТЬ
+            ОстаткиМатериаловОстатки.Материал            КАК Материал,
+            ОстаткиМатериаловОстатки.КоличествоОстаток   КАК Количество
+        ИЗ
+            РегистрНакопления.ОстаткиМатериалов.Остатки() КАК ОстаткиМатериаловОстатки
+      </Query>
+      <Fields>
+        <Field>
+          <Field>Материал</Field>
+          <Title>Материал</Title>
+        </Field>
+        <Field>
+          <Field>Количество</Field>
+          <Title>Количество</Title>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <DataCompositionSchema>
+    <Settings>
+      <Selection>
+        <Item><Field>Материал</Field></Item>
+        <Item><Field>Количество</Field></Item>
+      </Selection>
+      <Structure>
+        <Group name="ГруппировкаМатериал">
+          <GroupFields>
+            <GroupField>
+              <Field>Материал</Field>
+            </GroupField>
+          </GroupFields>
+          <Selection>
+            <Item><Field>Материал</Field></Item>
+            <Item><Field>Количество</Field></Item>
+          </Selection>
+        </Group>
+      </Structure>
+      <Order>
+        <OrderItem>
+          <Field>Материал</Field>
+          <OrderType>Ascending</OrderType>
+        </OrderItem>
+      </Order>
+    </Settings>
+  </DataCompositionSchema>
+</DataCompositionSchema>

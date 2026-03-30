@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <Catalog>
+    <Properties>
+      <Name>Сотрудники</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Сотрудники</core:content></core:item>
+      </Synonym>
+      <Hierarchical>false</Hierarchical>
+    </Properties>
+    <ChildObjects>
+      <Attribute>
+        <Properties>
+          <Name>Должность</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Должность</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:string</core:Type><core:StringQualifiers><core:Length>100</core:Length></core:StringQualifiers></Type>
+        </Properties>
+      </Attribute>
+      <Attribute>
+        <Properties>
+          <Name>Телефон</Name>
+          <Synonym><core:item><core:lang>ru</core:lang><core:content>Телефон</core:content></core:item></Synonym>
+          <Type><core:Type>xsd:string</core:Type><core:StringQualifiers><core:Length>15</core:Length></core:StringQualifiers></Type>
+        </Properties>
+      </Attribute>
+    </ChildObjects>
+  </Catalog>
+</MetaDataObject>

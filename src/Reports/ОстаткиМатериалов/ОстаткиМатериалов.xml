@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <Report>
+    <Properties>
+      <Name>ОстаткиМатериалов</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Остатки материалов</core:content></core:item>
+      </Synonym>
+      <DefaultForm>Report.ОстаткиМатериалов.Form.ФормаОтчёта</DefaultForm>
+    </Properties>
+    <ChildObjects>
+      <Form>
+        <Name>ФормаОтчёта</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Форма отчёта</core:content></core:item></Synonym>
+        <UsePurposes>
+          <UsePurpose>PlatformApplication</UsePurpose>
+        </UsePurposes>
+      </Form>
+    </ChildObjects>
+  </Report>
+</MetaDataObject>

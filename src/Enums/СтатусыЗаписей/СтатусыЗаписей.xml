@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:core="http://v8.1c.ru/8.1/data/core">
+  <Enum>
+    <Properties>
+      <Name>СтатусыЗаписей</Name>
+      <Synonym>
+        <core:item><core:lang>ru</core:lang><core:content>Статусы записей</core:content></core:item>
+      </Synonym>
+    </Properties>
+    <ChildObjects>
+      <EnumValue>
+        <Name>Новая</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Новая</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Подтверждена</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Подтверждена</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>ВРаботе</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>В работе</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Выполнена</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Выполнена</core:content></core:item></Synonym>
+      </EnumValue>
+      <EnumValue>
+        <Name>Отменена</Name>
+        <Synonym><core:item><core:lang>ru</core:lang><core:content>Отменена</core:content></core:item></Synonym>
+      </EnumValue>
+    </ChildObjects>
+  </Enum>
+</MetaDataObject>
